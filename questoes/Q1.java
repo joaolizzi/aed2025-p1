@@ -13,7 +13,13 @@ public class Q1 {
         int n = IO.lerValorInteiro();
 
         //Processamento
-        resolverQuadradoEAoCubo(n);
+        resolverQuadradoEAoCubo(n);{
+            for (int i = 1; i <= n; i++) {
+                int quadrado = i * i;
+                int cubo = i * i * i;
+                IO.imprimir("Número: " + i + ", Quadrado: " + quadrado + ", Cubo: " + cubo);
+            }
+        }
         
     }
 

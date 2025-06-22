@@ -10,8 +10,18 @@ public class Q2 {
         IO.imprimir("Avaliação - Questão 02 - Senha Fixa");
 
         //Entrada
-
+       final int senhaFixa = 2002;
+       int senha;
         //Processamento
+       while (true) {
+        senha = IO.lerValorInteiro();
+        if (senha == senhaFixa) {
+            IO.imprimir("Acesso permitido");
+            break;
+        } else {
+            IO.imprimir("Senha Invalida");
+        }
+       }
         // resolverSenhaFixa();
         
     }
